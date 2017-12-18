@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Pratik Nalage</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+        
+        <style>
+            .brand{
+              position: relative;
+              left: 15%;
+            }
+            .nav-menu{
+              position: relative;
+              right: 15%;
+            }
+            .navbar-custom{
+                background-color: black;
+                color: white;
+                padding: 1%;
+                font-family: 'Courgette', cursive;
+                border-bottom: 2px solid #28C3AB;
+            }
+            .nav-link{
+                color: white;
+                text-decoration: none;
+            }
+            .nav-link:hover{
+                color: #28C3AB;
+            }
+            .intro{
+                margin-top: 4%;
+                background-color: burlywood;
+                text-align: center;
+                padding-top: 250px;
+                padding-bottom: 250px;
+            }
+            .brand-title{
+                font-family: 'Luckiest Guy', cursive;
+                font-weight: 400;
+                font-size: 100px;
+                position: relative;
+                left: -50%;
+                animation: brand-title-animation 2s ease-in both;
+            }
+            
+            @keyframes brand-title-animation {
+                0%{ transform: translateX(-50%); }
+
+                80%{ transform: translateX(60%); }
+                100%{ transform: translateX(50%); }
+            }
+            
+            .brand-sub-title{
+                font-family: 'Courgette', cursive;
+                font-size: 40px;
+            }
+            .icon{
+                font-size: 70px;
+                transition: 1s;
+                cursor: pointer;
+            }
+            
+            .icon1:hover{
+                transform: translateY(20%) rotate(360deg) scale(2) ;               
+            }
+            .icon2r:hover{
+                transform: translateX(25%);
+            }
+            .icon2l:hover{
+                transform: translateX(-25%);
+            }            
+            .no-link{
+                color: white;
+                text-decoration: none;
+            }
+            
+            #education{
+                padding-top: 70px;
+            }
+            .bio-title{
+                text-transform: uppercase;
+                padding-bottom: 3px;
+                border-bottom: 5px solid #28C3AB;
+                display: inline;
+                margin-right: 5px;
+            }
+            .seperator-icon{
+                font-size: 7px;
+                margin-left: 5px;
+                margin-right: 5px;
+                position: relative;
+                top: -2px;
+                color: gray;
+            }
+            
+            hr{
+                border-color:#28C3AB;
+                width: 80%;
+            }
+            .lan{
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            #quote{
+                
+                background-repeat: no-repeat;
+                background-size: 100%;       
+            }
+            #quote1{
+                background: url("tumblr.gif");
+            }
+            #quote-text{
+                font-size: 25px;
+                color: white;
+                padding: 100px;
+                text-align: justify;
+            }
+            #quote-author{
+                font-size: 15px;
+                font-style: italic;
+            }
+            .dir-right{
+                color: #28C3AB;
+                position: relative;
+                right: -85%;
+            }
+            .dir-left{
+                color: #28C3AB;
+            }
+            #contact{
+                padding: 40px;
+                text-align: center;
+            }
+            .contact-title{
+                text-align: center;
+                font-size: 40px;
+                padding-bottom: 40px;
+                font-family: 'Luckiest Guy', cursive;
+            }
+            .icon3{
+                color: #28C3AB;
+                padding: 5%;
+            }
+            .icon3:hover{
+                transform: translateY(-10%);
+            }
+            .copy-title{
+                text-align: center;
+                padding: 0px;
+                color: burlywood;
+            }
+            .icon4{
+                cursor: pointer;
+            }
+            .icon4:hover{
+                color: #28C3AB;
+            }
+            .detailed-marks{
+                margin: 20px 0px 20px 0px;
+                display: none;
+            }
+            table,tr,td{
+                border: 1px solid #ddd;
+                text-align: center;
+            }
+            table{
+                width: 50%;                
+            }
+            tr:first-child{
+                font-weight: bold;
+            }
+            tr:last-child{
+                cursor: none;
+            }
+            td:hover{
+                font-weight: bold;
+            }
+            
+            
+        </style>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".icon-toggle").click(function() {
+                    $(this).find('i').toggle();
+                    $('.detailed-marks').slideToggle();
+                });
+            });
+        </script>
+        
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-toggleable-sm fixed-top navbar-custom" >
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+          </button>    
+          <h1 class="navbar-brand mb-0 brand">Pratik Nalage</h1>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto nav-menu">
+                  <li class="nav-item active ">
+                      <a href="" class="nav-link">Home</a>                    
+                  </li>
+                  <li class="nav-item active ">
+                      <a href="#education" class="nav-link">Bio</a>                    
+                  </li>
+                  <li class="nav-item ">
+                      <a href="#contact" class="nav-link">Contact</a>
+                  </li>              
+              </ul>                
+          </div>            
+        </nav>
+        
+        <section id="intro">
+                <div class="intro">
+                    <h1 class="brand-title">I'm Pratik Nalage</h1>
+                    <p class="brand-sub-title">I'm currently pusruing engineering in Information Technology. I love to explore and try cool ideas.</p>
+                    <a href="#education" class="no-link">
+                        <i class="fa fa-chevron-circle-down icon icon1" aria-hidden="true"></i>
+                    </a>
+                </div>
+        </section>  
+        
+        
+        
+        <section id="education">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="bio-title">Education</h2><br><br>
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="bio-name">Dr. Antonio da Silva High School</h2>
+                        <em>School <i class="fa fa-circle seperator-icon" aria-hidden="true"></i> June 2001 - April 2013 <i class="fa fa-circle seperator-icon" aria-hidden="true"></i> 86.73%</em>
+                        <p>“School life is the best life” phrase says that life is all about learning for something new innovation. School gives us better education, joyful life, careless about everything, etc. It is the most important part of human life. It is the really free from the care and great happiness for the students.
+                        </p><br><br>
+                        
+                        <h2 class="bio-name">Wilson College</h2>
+                        <em>Junior College <i class="fa fa-circle seperator-icon" aria-hidden="true"></i> June 2013 - April 2015 <i class="fa fa-circle seperator-icon" aria-hidden="true"></i> 88.3%</em>
+                        <p>My entry into a Jr. college after I had completed my school education was an important event in my life.  I found that there is a great difference between school and college life. The world of the school is narrow and limited. I got to rediscoverd myself. Shifting from carefree life was the real pain. My horizon expanded by manyfold.</p><br><br>
+                        
+                        <h2 class="bio-name">D.J. Sanghvi College of Engineering</h2>
+                        <em>Junior College <i class="fa fa-circle seperator-icon" aria-hidden="true"></i> July 2013 - May 2015 <i class="fa fa-circle seperator-icon" aria-hidden="true"></i> 8.3 CGPA </em>
+                        <span class="icon-toggle">
+                            <i class="fa fa-chevron-circle-down icon4" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-circle-up icon4" aria-hidden="true" style="display:none"></i>
+                        </span>
+                        <div class="detailed-marks">
+                        <table >
+                            <tr>
+                                <td>Sem I</td>
+                                <td>Sem II</td>
+                                <td>Sem III</td>
+                                <td>Sem IV</td>
+                            </tr>
+                            <tr>
+                                <td>7.56</td>
+                                <td>8.03</td>
+                                <td>8.36</td>
+                                <td>9.5</td>
+                            </tr>
+                        </table>
+                        </div>
+                        <p>The man-made world which consists of machines and devices aroused my curiosity since I was a child and made my entry into the engineering life. The most important quality you learn here is "Time management". Apart from that engineering life not only expanded my knowledge but also help me in developing soft skills. In facing challenges, I am encouraged to "think outside of the box" and explore new possibilities. </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <br><hr><br>
+        
+        <section id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="bio-title">Skills</h2><br><br>
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="bio-name">Web Technologies</h2>
+                        <p class="lan">HTML5, CSS, JS, JQUERY, PHP, BOOTSTRAP</p>
+                        
+                        <h2 class="bio-name">Programming Languages</h2>
+                        <p class="lan">Python, C++, Java</p>
+                        
+                        <h2 class="bio-name">Database Languages</h2>
+                        <p class="lan">MySQL, PLSQL</p>
+                        
+                        <h2 class="bio-name">Workspace</h2>
+                        <p class="lan">Windows, Ubuntu </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <br><br>
+        
+        <section id="quote">
+            <div id="quote1">    
+                <div class="container">
+                    <p id="quote-text"><span id="qt"></span>
+                        <br><span id="quote-author">- <br><br></span><br><br>
+                        <a onclick="prev()"><i class="fa fa-arrow-circle-left dir-left icon icon2l" aria-hidden="true"></i></a>
+                        <a onclick="next()"><i class="fa fa-arrow-circle-right dir-right icon icon2r" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+            var q = ["Every great developer you know got there by solving problems they were unqualified to solve until they actually did it. ",
+                     "I'm not a great programmer; I'm just a good programmer with great habits.",
+                     "No one in the brief history of computing has ever written a piece of perfect software. It's unlikely that you'll be the first.",
+                     "One of the best programming skills you can have is knowing when to walk away for awhile.",
+                     "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.",
+                     "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."];
+            var a = ["Patrick McKenzie",
+                     "Kent Beck",
+                     "Andy Hunt",
+                     "Oscar Godson",
+                     "Bill Gates",
+                     "Linus Torvalds"]
+            var i=0;
+            disp();
+            function next() {
+                if((i+1) < q.length ) {i+=1;}
+                else {i = 0;}
+                disp();
+            }
+            function prev() {
+                if((i-1) > 0 ) {i-=1;}
+                else {i = q.length - 1;}
+                disp();
+            }
+            function disp() {
+                document.getElementById("qt").innerHTML = q[i];
+                document.getElementById("quote-author").innerHTML ="- " +a[i];
+            }
+                
+            
+        </script>
+        
+        <section id="contact">
+            <div class="container">
+                <h3 class="contact-title">Let's get in touch</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <i class="fa fa-mobile icon3 icon" aria-hidden="true"></i><br>
+                        <p class="contact-text">+91 9699-654-090</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="mailto:pknalage@gmail.com" target="_blank">
+                            <i class="fa fa-envelope icon3 icon" aria-hidden="true"></i>
+                        </a><br>
+                        <p class="contact-text">pknalage@gmail.com</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://www.google.co.in/maps/place/Lower+Parel,+Mumbai,+Maharashtra/" target="_blank">
+                            <i class="fa fa-map-marker icon3 icon" aria-hidden="true"></i>
+                        </a><br>
+                        <p class="contact-text">Mumbai, Maharashtra, India</p>
+                    </div>
+                </div>
+                <br>
+                <div class="extra-contact">
+                    <a href="https://www.facebook.com/people/Pratik-Nalage/100002231449197" target="_blank">
+                        <i class="fa fa-facebook-square icon icon3" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pratik_nalage/?hl=en" target="_blank">
+                        <i class="fa fa-instagram icon icon3" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://in.linkedin.com/in/pratik-nalage-930259121" target="_blank">
+                        <i class="fa fa-linkedin-square icon icon3" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="copyrights">
+            <div class="container">
+                <h3 class="copy-title">Designed and crafted by Pratik Nalage</h3>
+            </div>
+        </section>
+        
+        
+    </body>
+</html>
